@@ -1,2 +1,6 @@
+numpy
 PyQt5
 PyQtWebEngine
+Pillow
+pyscreenshot
+tensorflow
