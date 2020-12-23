@@ -1,1 +1,6 @@
 .ipynb_checkpoints/
+.idea/
+__pycache__/
+train_boards/
+train_tiles/
+/*.png
