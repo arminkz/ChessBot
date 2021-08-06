@@ -29,3 +29,8 @@ def grayscale_resized_image(img):
 
     # Convert to grayscale and array
     return np.asarray(img.convert('L'), dtype=np.float32)
+
+
+def grayscale_image(img):
+    # Convert to grayscale and array
+    return np.asarray(img.convert('L'), dtype=np.float32)

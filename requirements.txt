@@ -1,6 +1,11 @@
 numpy
 PyQt5
+PyQt5-stubs
 PyQtWebEngine
 Pillow
 pyscreenshot
 tensorflow
+scipy
+matplotlib
+chess
+pyautogui

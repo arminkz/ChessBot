@@ -127,8 +127,8 @@ def detect_chessboard(img):
     dY_hough = tf.reduce_sum(dY_pos, 1) * tf.reduce_sum(-dY_neg, 1) / (grey.shape[1] * grey.shape[1])
 
     # Arbitrarily choose half of max value as threshold, since they're such strong responses
-    dX_hough_thresh = tf.reduce_max(dX_hough) * 0.6
-    dY_hough_thresh = tf.reduce_max(dY_hough) * 0.45
+    dX_hough_thresh = tf.reduce_max(dX_hough) * 0.5
+    dY_hough_thresh = tf.reduce_max(dY_hough) * 0.5
 
     lines_x, lines_y, is_match = get_chess_lines(tf.keras.backend.flatten(dX_hough),
                                                  tf.keras.backend.flatten(dY_hough),
